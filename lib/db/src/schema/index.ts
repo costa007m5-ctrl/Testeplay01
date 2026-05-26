@@ -1,15 +1,15 @@
-// Export your models here. Add one export per file
+// Exporte seus modelos aqui. Um export por arquivo.
 // export * from "./posts";
 //
-// Each model/table should ideally be split into different files.
-// Each model/table should define a Drizzle table, insert schema, and types:
+// Cada modelo/tabela deve ser separado em arquivos individuais.
+// Cada modelo deve definir uma tabela Drizzle, insert schema e tipos:
 //
-//   import { pgTable, text, serial } from "drizzle-orm/pg-core";
+//   import { mysqlTable, varchar, text, int } from "drizzle-orm/mysql-core";
 //   import { createInsertSchema } from "drizzle-zod";
 //   import { z } from "zod/v4";
 //
-//   export const postsTable = pgTable("posts", {
-//     id: serial("id").primaryKey(),
+//   export const postsTable = mysqlTable("posts", {
+//     id: int("id").autoincrement().primaryKey(),
 //     title: text("title").notNull(),
 //   });
 //
